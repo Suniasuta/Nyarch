@@ -1,4 +1,4 @@
 ///////////////////////////////////
-I am not the crator of these stylesheets
+I am not the creator of these stylesheets
 I have only changed the colors
 ///////////////////////////////////
