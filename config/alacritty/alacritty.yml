@@ -1,0 +1,54 @@
+colors:
+  # Default colors
+  primary:
+    background: '#00001e'
+    foreground: '#75006b'
+
+  # Colors the cursor will use if `custom_cursor_colors` is true
+  cursor:
+    text: '#00001e'
+    cursor: '#825af0'
+
+  # Normal colors
+  normal:
+    black:   '#00001e'
+    red:     '#e80000'
+    green:   '#e85a00'
+    yellow:  '#e88d57'
+    blue:    '#825af0'
+    magenta: '#b55abd'
+    cyan:    '#8227f0'
+    white:   '#75006b'
+
+      # Bright colors
+  bright:
+    black:   '#825af0'
+  #  red:     'b55a5 
+    red:     '#e80000'
+    green:   '#e85a00'
+    yellow:  '#e88d57'
+    blue:    '#825af0'
+    magenta: '#b55abd'
+    cyan:    '#8227f0'
+  #  cyan:    '828df0'
+    white:   '#4f278a'
+
+
+draw_bold_text_with_bright_colors: false
+
+# window:
+#   opacity: 0.5
+
+colors.transparent_background_colors: true
+
+font:
+ normal:
+   family: JetBrainsMono Nerd Font Mono
+   style: Regular
+ bold:
+   family: JetBrainsMono Nerd Font Mono
+   style: Bold
+ italic:
+   family: JetBrainsMono Nerd Font Mono
+   style: Italic
+

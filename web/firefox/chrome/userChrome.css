@@ -1,0 +1,246 @@
+
+
+#main-window
+{
+    background: #00001e !important;
+}
+
+#TabsToolbar,
+.table-widget-empty-text
+{
+    -moz-appearance: -moz-mac-vibrant-titlebar-light !important;
+ }
+
+#TabsToolbar:-moz-lwtheme-brighttext,
+.table-widget-empty-text:-moz-lwtheme-brighttext
+{
+
+
+ }
+
+.tabbrowser-tab[selected="true"] .tab-label:-moz-lwtheme-brighttext
+{
+}
+
+.tabbrowser-tab .tab-label:-moz-lwtheme-brighttext
+{
+}
+
+
+.tabbrowser-tab[selected="true"] .tab-background:-moz-lwtheme-brighttext
+{
+    box-shadow: none !important;
+}
+
+#navigator-toolbox {
+    border-bottom: none !important;
+
+}
+/* popup menu */
+
+
+/* menubar + bookmarks */
+
+:root #nav-bar,
+#PersonalToolbar,
+#titlebar
+{
+
+
+}
+
+#nav-bar{ box-shadow: none !important }
+
+#TabsToolbar, #nav-bar, #PersonalToolbar {
+ color: #adadad !important;
+}
+
+.browser-toolbar { background:none !important }
+
+/* simplify tabs */
+
+#titlebar #TabsToolbar {
+ background: none !important;
+}
+.titlebar-spacer[type="pre-tabs"] {
+	/* border: 0 !important; */
+	display: none;
+}
+
+#tabbrowser-tabs:not([movingtab]) > .tabbrowser-tab[beforeselected-visible]::after, #tabbrowser-tabs[movingtab] > .tabbrowser-tab[visuallyselected]::before, .tabbrowser-tab[visuallyselected]::after {
+    opacity: 0 !important;
+}
+.tab-line {
+    height: 0px !important;
+}
+
+.tabbrowser-tab {
+    margin-left: 5px !important;
+    margin-top: 3px !important;
+    /* margin-right: 4px !important; */
+}
+.tabbrowser-tab:not([visuallyselected="true"]), .tabbrowser-tab:-moz-lwtheme {
+
+
+}
+
+tab[selected="true"] .tab-content {
+
+}
+tab[selected="true"] .tab-background {
+
+}
+
+.tabbrowser-tab::after, .tabbrowser-tab::before {
+    border-left: 0 !important;
+    opacity: 0 !important;
+}
+
+.tab-close-button {
+	transition: all 0.3s ease !important;
+  border-radius: 30px !important;
+  transform: translate(-3px,0px);
+}
+.tab-close-button:hover {
+    fill-opacity: 0.2 !important;
+}
+
+.tabbrowser-tab > .tab-stack > .tab-background {
+
+  border-radius: 15px !important;
+
+}
+.tabbrowser-tab > .tab-stack > .tab-background:not([selected="true"]) {
+
+}
+.tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected="true"]) {
+    border-color: #00001e !important;
+    color: #00001e !important;
+
+}
+
+
+/* urlbar */
+#urlbar-background
+{
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+
+    backdrop-filter: blur(7px);
+    background-color: #00001e !important;
+    box-shadow: none !important;
+    border-color: #00001e !important;
+    border-radius: 15px !important;
+    border-color: #00001e !important;
+}
+
+
+
+/* bookmarks */
+.bookmark-item{
+  border-radius: 300px !important;
+  transform: translate(0,-1px);
+  background-color: #transparent !important;
+}
+
+.bookmark-item:hover{
+  background-color: rgba(0,0,0, 0.1) !important;
+}
+
+
+
+.bookmark-item > .toolbarbutton-icon
+{
+
+  display: flex !important;
+  justify-content: center !important;
+
+	border-radius: 100% !important;
+	padding: 6px !important;
+	height: 28px !important;
+	width: 28px !important;
+	color: #f9f9fb !important;
+	background-color: #00001e !important;
+
+  transition-property: background-color;
+  transition-duration: 0.5s;
+
+}
+
+.bookmark-item:hover > .toolbarbutton-icon
+{
+	background-color: #00001e !important;
+}
+
+.bookmark-item:active
+{
+	color: rgba(160,160,160,0.9) !important;
+}
+
+#tabs-newtab-button .toolbarbutton-icon {
+  border-radius: 30px !important;
+
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+#tabs-newtab-button:hover .toolbarbutton-icon {
+  background-color: rgba(130,130,130,0.5) !important;
+}
+
+#tabs-newtab-button:active .toolbarbutton-icon {
+  background-color:  #00001e !important;
+  color: rgba(110,110,110,0.7) !important;
+}
+
+.toolbarbutton-badge-stack{
+  border-radius: 30px !important;
+}
+
+#tracking-protection-icon-container{
+  border-radius: 30px !important;
+}
+
+#identity-icon-box{
+  border-radius: 30px !important;
+}
+
+#identity-permission-box{
+  border-radius: 30px !important;
+}
+
+#star-button-box{
+  border-radius: 30px !important;
+}
+
+#reload-button{
+   border-radius: 30px !important;
+}
+
+#notification-popup-box{
+  border-radius: 30px !important;
+}
+
+#back-button:hover{
+  border-radius: 30px !important;
+}
+
+#forward-button:hover{
+  border-radius: 30px !important;
+}
+
+#PlacesToolbarItems {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+tab[pending], #alltabs-popup menuitem[pending] {background-color:  #00001e  !important;}
+
+body {
+  --newtab-background-color: #00001e !important;
+  --newtab-background-color-secondary: #00001e !important;
+  --newtab-text-primary-color: #75006b !important;
+  --newtab-primary-element-text-color: #00001e !important;
+  --newtab-wordmark-color: #fbfbfe;
+  --newtab-status-success: #7C6;
+}
