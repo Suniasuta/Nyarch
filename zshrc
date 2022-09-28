@@ -1,5 +1,12 @@
+RPROMPT="%F{yellow}%n"
+PS1="%F{green}%d%F{cyan}>%F{white} "
+
 
 if [ "$TERM" = "linux" ]; then
+    export LC_ALL=en_US.UTF-8
+    export LANG=en_US.UTF-8
+    export LANGUAGE=en_US.UTF-8
+    FONTFACE="JetBrains"
     echo -en "\e]P000001e" #black
     echo -en "\e]P800001e" #darkgrey
     echo -en "\e]P1e86000" #darkred
@@ -18,25 +25,9 @@ if [ "$TERM" = "linux" ]; then
     echo -en "\e]PF75006b" #white
     clear #for background artifacting
 fi
-FONTFACE="JetBrainsMono Nerd Font Mono"
-# confirmations, etc.) must go above this block; everything else may go below.
-#if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-#  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-#fi
-
-# themes
-# pure
-# fpath+=/home/toaster/.config/zsh/pure
-# autoload -U promptinit; promptinit
-# prompt pure
-#plugins
-#
-
-
 
 source /home/toaster/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /home/toaster/.config/zsh/plugins/cd-ls/cd-ls.zsh
-source /home/toaster/.config/zsh/plugins/fzf-tab/fzf-tab.zsh
 ZSH_AUTOSUGGEST_STRATEGY=(history)
 
 HISTFILE=~/.histfile
@@ -48,22 +39,11 @@ autoload -Uz compinit
 compinit
 _comp_options+=(globdots)
 
-alias :q="ranger"
-alias :Q="ranger"
-alias lcava="LC_ALL=en_US.UTF-8 cava"
-
-export PAGER=nvimpager
-export VISUAL=neovim
-export EDITOR=neovim
-
-source /home/toaster/.config/zsh/plugins/powerlevel10k/powerlevel10k.zsh-theme
-source /home/toaster/.config/zsh/plugins/powerlevel10k/powerlevel10k.zsh-theme
-
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-source /home/toaster/.p10k.zsh
+alias :q="exit"
+alias :Q="exit"
+alias cr="cargo r"
+alias cl="clear"
+alias russy="cargo b"
 
 
 /home/toaster/.config/zsh/tv-bars.sh
-# neofetch | lolcat
-bindkey -v
